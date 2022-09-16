@@ -26,7 +26,7 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
           </Link>
           <nav className={s.navMenu}>
             <Link href="/search">
-              <a className={s.link}>All</a>
+              <a className={s.link}>Semua Produk</a>
             </Link>
             {links?.map((l) => (
               <Link href={l.href} key={l.href}>

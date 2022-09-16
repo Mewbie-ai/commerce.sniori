@@ -117,7 +117,10 @@ const Layout: React.FC<Props> = ({
     <CommerceProvider locale={locale}>
       <div className={cn(s.root)}>
         <Navbar links={navBarlinks} />
-        <main className="fit">{children}</main>
+        <div className={' flex flex-col justify-center items-center'}>
+          <main className="max-w-screen-lg fit">{children}</main>
+        </div>
+        {/* className="fit" */}
         <Footer pages={pageProps.pages} />
         <ModalUI />
         <CheckoutProvider>

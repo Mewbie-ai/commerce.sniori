@@ -1206,6 +1206,14 @@ export type SiteFeaturedProductsArgs = {
 }
 
 /** A site */
+export type SiteSaleArgs = {
+  before?: Maybe<Scalars['String']>
+  after?: Maybe<Scalars['String']>
+  first?: Maybe<Scalars['Int']>
+  last?: Maybe<Scalars['Int']>
+}
+
+/** A site */
 export type SiteProductArgs = {
   id?: Maybe<Scalars['ID']>
   entityId?: Maybe<Scalars['Int']>

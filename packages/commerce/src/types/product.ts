@@ -5,7 +5,7 @@ export type ProductImage = {
 
 export type ProductPrice = {
   value: number
-  currencyCode?: 'USD' | 'EUR' | 'ARS' | 'GBP' | string
+  currencyCode?: 'USD' | 'EUR' | 'ARS' | 'GBP' | 'IDR' | string
   retailPrice?: number
   salePrice?: number
   listPrice?: number
